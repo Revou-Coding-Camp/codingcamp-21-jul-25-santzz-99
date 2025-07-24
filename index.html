@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <main>
+    <h1>Todo List</h1>
+    <form id="todo-form">
+      <input id="task-input" type="text" placeholder="Add a todo . . ." />
+      <input id="date-input" type="date"/>
+      <button id="add-btn" type="submit">+</button>
+    </form>
+    <div class="buttons-container">
+      <button id="filter-btn" type="button">FILTER</button>
+      <button id="delete-all-btn" type="button">DELETE ALL</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>TASK</th>
+          <th>DUE DATE</th>
+          <th>STATUS</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody id="todo-tbody">
+        <tr>
+          <td colspan="4" id="no-task-row">No task found</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
